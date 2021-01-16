@@ -7,7 +7,6 @@ Resource  ../Operational/variables.robot
 User Should be able to book an electronic device on flipkart
     Open Flipkart website
     Enter mobile number and password details
-    #If loop func
     Clear the contents in the cart
     Move to Home Page
     Navigate to Category "Electronics"

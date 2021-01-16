@@ -22,18 +22,6 @@ Enter mobile number and password details
     Click Element  ${submit}
     Log to Console  Step2
 
-#If loop func
-    #${Result} =  Locator Should Match X Times  ${Xpath}  2
-    #Log to Console  ${Result}
-    #Run Keyword If  '${RESULT}'=='None'  Clear the contents in the cart
-    #${c} =   Get Element Count   ${Xpath}
-    #Log to Console  ${c}
-    #Run Keyword If   ${c}>0  Clear the contents in the cart
-    #${present}=  Run Keyword And Return Status    Element Should Be Visible   ${Xpath}
-    #Log to Console  ${present}
-    #Run Keyword If    ${present}    Clear the contents in the cart
-    #Run Keyword If    ${present}    Clear the contents in the cart
-
 Clear the contents in the cart
     sleep  2s
     Click Element  ${home_screen_cart}
